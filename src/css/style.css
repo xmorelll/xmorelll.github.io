@@ -1,5 +1,177 @@
-body {
-    height: 100vh;
-    color: #1f1f1f;
-    background: linear-gradient(to bottom, #bada55, #c0ffee);
+html {
+    background-color: #EEEEEE;
 }
+
+body {
+    color: #222222;
+    text-align: justify;
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0 auto;
+    line-height: 18px;
+    font-size: 12px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/**********
+ HEADER
+**********/
+
+header {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.header-content {
+    height: 72px;
+    padding: 10px 30px;
+    display: flex;
+
+}
+
+
+header img {
+    height: 72px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+
+
+/**********
+ Footer
+**********/
+
+footer {
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+    font-size: 11px;
+    line-height: initial;
+    font-weight: 100;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 60px;
+    width: fit-content;
+    text-align: justify;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/*************
+ CONTENT
+ *************/
+
+.content {
+    margin: 20px;
+}
+
+.content a {
+    display: block;
+}
+
+.content-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-flex-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content-flex-container {
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px;
+    height: 100%;
+}
+
+.link-image {
+    width: 100%;
+    height: inherit;
+    max-height: 500px;
+}
+
+
+/*************
+COLORS
+ *************/
+
+.black {
+    color: black;
+}
+
+/*******************
+SMALL SCREENS
+ *******************/
+
+
+
+@media (max-width: 600px) {
+    .content-flex-box {
+        flex: 0 0 100%
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .header-title {
+        padding: 0;
+        font-size: 11px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

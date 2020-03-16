@@ -1,14 +1,49 @@
-<html>
+<html lang="es">
     <head>
+        <meta charset="utf-8">
         <link rel="stylesheet" href="src/css/style.css">
         <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
         <title>Desarrollo de una web</title>
         <script src="src/js/index.js"></script>
+        <meta name="description" content="Descripcion de la pagina">
+        <meta name="keywords" content="palabras, clave, separadas, por, espacios">
     </head>
     <body>
-        <span>Hola111</span>
-        <i class="fas fa-key"></i>
-        <a href="src/pages/cat1.html">Link Cat1</a>
-        <a href="src/pages/cat2.html">Link Cat2</a>
+        <header>
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="src/img/logoUOC.png" title="Universitat Oberta de Catalunya " alt="Logo Universitat Oberta de Catalunya">
+                </div>
+                <div class="header-title">
+                    <h1>El desarrollo front-end.</h1>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content-flex">
+                <div class="content-flex-box">
+                    <div class="content-flex-container">
+                        <a href="src/pages/cat1.html" class="content-image-link">
+                            <img src="src/img/Frameworks.png" title="Frameworks " alt="Frameworks image" class="link-image">
+                        </a>
+                        <a href="src/pages/cat1.html"><h2 class="black">Link Cat1</h2></a>
+                    </div>
+                </div>
+                <div class="content-flex-box">
+                    <div class="content-flex-container">
+                        <a href="src/pages/cat2.html" class="content-image-link">
+                            <img src="src/img/FrontendCode.png" title="Frontend code " alt="Frontend code image" class="link-image">
+                        </a>
+                        <a href="src/pages/cat1.html"><h2 class="black">Lenguajes del Front-end</h2></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="footer-content">
+                <span>Trabajo realizado por <b>Xavier Morell Llorens</b>. Asignatura <b>Herramientas HTML y CSS</b>.</span>
+            </div>
+        </footer>
     </body>
 </html>
