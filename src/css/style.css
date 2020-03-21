@@ -128,6 +128,15 @@ COLORS
     color: black;
 }
 
+
+/****************
+BORDER
+ ***************/
+
+.border-bottom {
+    border-bottom: solid black 1px;
+}
+
 /*******************
 SMALL SCREENS
  *******************/
