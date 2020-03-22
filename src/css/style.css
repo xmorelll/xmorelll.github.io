@@ -1,5 +1,6 @@
 html {
     background-color: #EEEEEE;
+    position: relative;
 }
 
 body {
@@ -12,18 +13,9 @@ body {
     font-size: 12px;
 }
 
-a:link {
-    text-decoration: none;
+.small-size {
+    font-size: 10px;
 }
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 
 /**********
  HEADER
@@ -68,6 +60,9 @@ footer {
     font-size: 11px;
     line-height: initial;
     font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-content {
@@ -87,7 +82,11 @@ footer {
  *************/
 
 .content {
-    margin: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 80px;
+
 }
 
 .content a {
@@ -110,15 +109,54 @@ footer {
     border: 1px solid black;
     text-align: center;
     margin: 5px;
+    padding: 4px;
     height: 100%;
 }
 
+.align-left {
+    text-align: left !important;
+}
+
+.content-text {
+    text-align: justify;
+    font-size: 16px;
+}
+
+
+/********
+LINKS
+ ********/
 .link-image {
     width: 100%;
     height: inherit;
     max-height: 500px;
 }
 
+.inline-link {
+    display: inline !important;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 238);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/********
+ABBRS
+ ********/
+
+abbr {
+    text-decoration: none;
+}
 
 /*************
 COLORS
@@ -159,6 +197,16 @@ SMALL SCREENS
 }
 
 
+/**************
+IFRAME (VIDEO)
+ *************/
+
+.body-video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 580px;
+}
 
 
 
@@ -167,6 +215,41 @@ SMALL SCREENS
 
 
 
+
+
+
+
+
+
+
+
+
+
+/************
+EXAMPLE STUDY
+ ************/
+.example-container button {
+    margin-top: 10px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    outline-color: unset;
+    cursor: pointer;
+}
+
+.example-container button:active {
+    background:#4e8450
+}
+
+.example-container label {
+    color: blue;
+    font-size: 14px;
+}
 
 
 

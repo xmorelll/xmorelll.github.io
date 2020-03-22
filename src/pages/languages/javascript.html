@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.css">
+        <title>Desarrollo de una web</title>
+        <script src="../../js/index.js"></script>
+        <meta name="description" content="Descripcion de la pagina">
+        <meta name="keywords" content="palabras, clave, separadas, por, espacios">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="header-logo">
+                    <img src="../../img/logoUOC.png" title="Universitat Oberta de Catalunya " alt="Logo Universitat Oberta de Catalunya">
+                </div>
+                <div class="header-title">
+                    <h1>Lenguaje Javascript.</h1>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content-text">
+                <p>
+                    Javascript
+                </p>
+
+                <iframe class="body-video" width="560" height="315" src="https://www.youtube.com/embed/xnWtGNiG2lg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>A continuación vamos a continuar con el ejemplo anterior (empezado en el apartado de HTML y CSS) para añadir una acción cuando el usuario pulse el botón.</p>
+                <h3>Ejemplo:</h3>
+
+            </div>
+            <div class="content-flex">
+                <div class="content-flex-box">
+                    <div class="content-flex-container align-left">
+<pre>
+<h4>HTML:</h4>&lt;div class="example-container"&gt;
+    &lt;h1&gt;Hola &lt;span id="user-name"&gt;desconocido&lt;/span&gt;&lt;/h1&gt;
+    &lt;label for="name"&gt;First name:&lt;/label&gt;
+    &lt;input id="name" name="name"&gt;
+    &lt;br/&gt;
+    &lt;button <b>onclick="setName()"</b>&gt;ACTION &lt;/button&gt;
+&lt;/div&gt;
+
+<h4>CSS:</h4>.example-container button {
+  margin-top: 10px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline-color: unset;
+  cursor: pointer;
+}
+
+.example-container button:active {
+    background:#4e8450
+}
+
+.example-container label {
+  color: blue;
+  font-size: 14px;
+}
+
+<h4>JavaScrip:</h4>let setName = function() {
+    //Get the name written in the input value.
+    const name = document.getElementById('name').value||"desconocido";
+    //Set the name in the title.
+    document.getElementById('user-name').textContent = name;
+};
+</pre>
+                    </div>
+                </div>
+                <div class="content-flex-box">
+                    <div class="content-flex-container align-left">
+                        <div class="example-container">
+                            <h1>Hola <span id="user-name">desconocido</span></h1>
+                            <label for="name">First name:</label>
+                            <input id="name" name="name">
+                            <br/>
+                            <button onclick="setName()">ACTION</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <span>Trabajo realizado por <b>Xavier Morell Llorens</b>. Asignatura <b>Herramientas HTML y CSS</b>.</span>
+            </div>
+        </footer>
+        <script>
+            let setName = function() {
+                //Get the name written in the input value.
+                const name = document.getElementById('name').value||"desconocido";
+                //Set the name in the title.
+                document.getElementById('user-name').textContent = name;
+            };
+        </script>
+    </body>
+</html>
