@@ -26,7 +26,7 @@
             <i class="fas fa-chevron-right"></i>
             <span>JavaScript</span>
         </div>
-        <div class="content">
+        <div class="content large-footer">
             <div class="content-text">
                 <p>
                     Javascript(<b>JS</b>) es un lenguaje de programación que te permite crear contenido nuevo y dinámico, controlar archivos de multimedia, crear imágenes animadas...
@@ -61,16 +61,27 @@
                     <div class="content-flex-container align-left">
 <pre>
 <h4>HTML:</h4>&lt;div class="example-container"&gt;
-    &lt;h1&gt;Hola &lt;span id="user-name"&gt;desconocido&lt;/span&gt;&lt;/h1&gt;
-    &lt;label for="name"&gt;First name:&lt;/label&gt;
+    &lt;h1&gt;Hola
+        &lt;span id="user-name"&gt;
+            desconocido
+        &lt;/span&gt;
+    &lt;/h1&gt;
+    &lt;label for="name"&gt;
+        First name:
+    &lt;/label&gt;
     &lt;input id="name" name="name"&gt;
     &lt;br&gt;
-    &lt;button <b>onclick="setName()"</b>&gt;ACTION &lt;/button&gt;
+    &lt;button&gt;
+        ACTION
+    &lt;/button&gt;
 &lt;/div&gt;
 
 <h4>CSS:</h4>.example-container button {
   margin-top: 10px;
-  background-color: #4CAF50; /* Green */
+
+  /* Green */
+  background-color: #4CAF50;
+
   border: none;
   color: white;
   padding: 16px;
@@ -92,10 +103,15 @@
 }
 
 <h4>JavaScrip:</h4>let setName = function() {
-    //Get the name written in the input value.
-    const name = document.getElementById('name').value||"desconocido";
+    //Get the name written
+    //in the input value.
+    const n = document.getElementById('name');
+    var name = n.value;
+    name = name||"desconocido";
+
     //Set the name in the title.
-    document.getElementById('user-name').textContent = name;
+    const u = document.getElementById('user-name');
+    u.textContent = name;
 };
 </pre>
                     </div>
@@ -114,6 +130,17 @@
             </div>
         </div>
         <footer>
+            <div class="foot-container">
+                <div>Ver tambien:</div>
+                <div class="foot-list">
+                    <div>
+                        <a href="html.html">HTML</a>
+                    </div>
+                    <div>
+                        <a href="css.html">CSS</a>
+                    </div>
+                </div>
+            </div>
             <div class="footer-content">
                 <span>Trabajo realizado por <b>Xavier Morell Llorens</b>. Asignatura <b>Herramientas HTML y CSS</b>.</span>
             </div>
