@@ -4,7 +4,6 @@
         <link rel="stylesheet" href="../../css/style.css">
         <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.css">
         <title>Desarrollo de una web</title>
-        <script src="../../js/index.js"></script>
         <meta name="description" content="Descripcion de la pagina">
         <meta name="keywords" content="palabras, clave, separadas, por, espacios">
     </head>
@@ -123,7 +122,7 @@
                             <label for="name">First name:</label>
                             <input id="name" name="name">
                             <br>
-                            <button onclick="setName()">ACTION</button>
+                            <button id="action-btn">ACTION</button>
                         </div>
                     </div>
                 </div>
@@ -145,13 +144,6 @@
                 <span>Trabajo realizado por <b>Xavier Morell Llorens</b>. Asignatura <b>Herramientas HTML y CSS</b>.</span>
             </div>
         </footer>
-        <script>
-            let setName = function() {
-                //Get the name written in the input value.
-                const name = document.getElementById('name').value||"desconocido";
-                //Set the name in the title.
-                document.getElementById('user-name').textContent = name;
-            };
-        </script>
+        <script src="../../js/index.js"></script>
     </body>
 </html>
