@@ -1,3 +1,4 @@
+
 html {
     background-color: #EEEEEE;
     position: relative;
@@ -114,6 +115,7 @@ footer {
 .content-flex {
     display: flex;
     flex-wrap: wrap;
+    height: min-content;
 }
 
 .content-flex-box {
@@ -199,7 +201,7 @@ SMALL SCREENS
 
 
 
-@media (max-width: 600px) {
+@media (max-width: 980px) {
     .content-flex-box {
         flex: 0 0 100%
     }
