@@ -263,6 +263,22 @@ BREADCRUMB
 }
 
 
+/*******************
+IMAGE
+ *******************/
+
+.img-center-container {
+    width: min-content;
+    margin: auto;
+}
+
+.content-main-img {
+    max-width: 300px;
+    min-width: 150px;
+    width: 50%;
+}
+
+
 
 
 
