@@ -97,6 +97,20 @@ footer {
     flex: 1;
 }
 
+.fb-icon {
+    position: absolute;
+    right: 5px;
+    bottom: 13px;
+
+    clip-path: circle(40%);
+    transition: 0.4s cubic-bezier(1, -1, 0, 2);
+}
+
+.fb-icon:hover {
+    clip-path: none;
+}
+
+
 /*************
  CONTENT
  *************/
