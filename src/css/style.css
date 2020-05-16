@@ -279,19 +279,122 @@ IMAGE
 }
 
 
+/******************
+TITLE ANIMATION
+ ******************/
 
+.title-animated span {
+    display: inline-block;
+}
 
+.title-animated-0 {
+    animation: bounceIn 1.5s;
+}
 
+.title-animated-1 {
+    animation: delayAppearance 0.2s, bounceIn 1.5s 0.2s;
+}
 
+.title-animated-2 {
+    animation: delayAppearance 0.4s, bounceIn 1.5s 0.4s;
+}
 
+.title-animated-3 {
+    animation: delayAppearance 0.6s, bounceIn 1.5s 0.6s;
+}
 
+.title-animated-4 {
+    animation: delayAppearance 0.8s, bounceIn 1.5s 0.8s;
+}
 
+.title-animated-5 {
+    animation: delayAppearance 1s, bounceIn 1.5s 1s;
+}
 
+.title-animated-6 {
+    animation: delayAppearance 1.2s, bounceIn 1.5s 1.2s;
+}
 
+.title-animated-7 {
+    animation: delayAppearance 1.4s, bounceIn 1.5s 1.4s;
+}
 
+.title-animated-8 {
+    animation: delayAppearance 1.6s, bounceIn 1.5s 1.6s;
+}
 
+.title-animated-9 {
+    animation: delayAppearance 1.8s, bounceIn 1.5s 1.8s;
+}
 
+.header-animated-0 {
+    animation: driveIn 1.5s;
+}
 
+.header-animated-1 {
+    animation: delayAppearance 0.2s, driveIn 1.5s 0.2s;
+}
+.header-animated-2 {
+    animation: delayAppearance 0.4s, driveIn 1.5s 0.4s;
+}
+.header-animated-3 {
+    animation: delayAppearance 0.6s, driveIn 1.5s 0.6s;
+}
+.header-animated-4 {
+    animation: delayAppearance 0.8s, driveIn 1.5s 0.8s;
+}
+.header-animated-5 {
+    animation: delayAppearance 1.0s, driveIn 1.5s 1.0s;
+}
+.header-animated-6 {
+    animation: delayAppearance 1.2s, driveIn 1.5s 1.2s;
+}
+.header-animated-7 {
+    animation: delayAppearance 1.4s, driveIn 1.5s 1.4s;
+}
+.header-animated-8 {
+    animation: delayAppearance 1.6s, driveIn 1.5s 1.6s;
+}
+.header-animated-9 {
+    animation: delayAppearance 1.8s, driveIn 1.5s 1.8s;
+}
+
+@keyframes delayAppearance {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(20px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes driveIn {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-20px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
 
 /************
