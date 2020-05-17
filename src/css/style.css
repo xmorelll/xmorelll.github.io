@@ -275,7 +275,17 @@ IMAGE
 .content-main-img {
     max-width: 300px;
     min-width: 150px;
-    width: 50%;
+    width: 50vw;
+}
+
+.relative-container {
+    position: relative;
+}
+
+.small-icon-container {
+    position: absolute;
+    right: 8px;
+    top: 8px;
 }
 
 
